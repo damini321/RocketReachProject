@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title> Payment </title> 
+</head>
+<body>
+    <center>  
+        <br>
+
+    <h2><b> Payment </b> </h2>
+    <form method="post">
+        <br>
+        {% csrf_token %}
+        
+        <div class="page-format">
+           
+            <!-- <p style="font-size: 12px;">User Name - {{ st.made_by }}</p> -->
+            <label id="amount" for="amount">Enter Your Amount: </label>
+            <input type="number" name="amount" value="" required> <br><br><br>
+
+            <button type="submit" class="btn btn-primary">Pay Now</button>
+            
+
+        </div>
+        
+        
+        
+    </form>
+    </center>
+</body>
+</html>
+
